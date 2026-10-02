@@ -1,0 +1,19 @@
+name: Security Verification
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  security-verification:
+
+    uses: Shivangi07-bee/Continuous-security-verification/.github/workflows/security-verification.yml@main
+
+    permissions:
+      contents: read
